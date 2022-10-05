@@ -1,0 +1,8 @@
+C:\workspace_c#\MyInterface\bin\Debug\MyInterface.exe.config
+C:\workspace_c#\MyInterface\bin\Debug\MyInterface.exe
+C:\workspace_c#\MyInterface\bin\Debug\MyInterface.pdb
+C:\workspace_c#\MyInterface\obj\Debug\MyInterface.csproj.AssemblyReference.cache
+C:\workspace_c#\MyInterface\obj\Debug\MyInterface.csproj.SuggestedBindingRedirects.cache
+C:\workspace_c#\MyInterface\obj\Debug\MyInterface.csproj.CoreCompileInputs.cache
+C:\workspace_c#\MyInterface\obj\Debug\MyInterface.exe
+C:\workspace_c#\MyInterface\obj\Debug\MyInterface.pdb
