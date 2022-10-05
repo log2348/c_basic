@@ -1,0 +1,8 @@
+C:\workspace_c#\DelegateApp\bin\Debug\DelegateApp.exe.config
+C:\workspace_c#\DelegateApp\bin\Debug\DelegateApp.exe
+C:\workspace_c#\DelegateApp\bin\Debug\DelegateApp.pdb
+C:\workspace_c#\DelegateApp\obj\Debug\DelegateApp.csproj.AssemblyReference.cache
+C:\workspace_c#\DelegateApp\obj\Debug\DelegateApp.csproj.SuggestedBindingRedirects.cache
+C:\workspace_c#\DelegateApp\obj\Debug\DelegateApp.csproj.CoreCompileInputs.cache
+C:\workspace_c#\DelegateApp\obj\Debug\DelegateApp.exe
+C:\workspace_c#\DelegateApp\obj\Debug\DelegateApp.pdb
