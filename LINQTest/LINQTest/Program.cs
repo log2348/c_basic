@@ -23,16 +23,16 @@ namespace LINQTest
         {
             var numbers = new int[] { 1, 4, 9, 16, 25, 36 };
 
-            /*
-            var evenNumbers = from p in numbers
+            // 기존 쿼리문
+            var resultQuery = from p in numbers
                               where (p % 2) == 0
                               select p;
-            */
 
-            var evenNumbers = numbers.Where(a => a % 2 == 0);
+            // 람다식 변환
+            var resultLamda = numbers.Where(a => a % 2 == 0);
 
             Console.WriteLine("Result:");
-            foreach (var val in evenNumbers)
+            foreach (var val in resultLamda)
             {
                 Console.WriteLine(val);
             }
@@ -81,19 +81,14 @@ namespace LINQTest
         static void ObjectQuery1()
         {
             // 기존 쿼리문
-            var results1 = from c in CreateCustomers()
+            var resultQuery = from c in CreateCustomers()
                           where c.City == "London"
                           select c;
-            
-            foreach (var c in results1)
-            {
-                Console.WriteLine(c);
-            }
 
             // 람다식 변형
-            var results2 = CreateCustomers().Where(a => a.City == "London");
+            var resultLamda = CreateCustomers().Where(a => a.City == "London");
 
-            foreach (var c in results2)
+            foreach (var c in resultLamda)
             {
                 Console.WriteLine(c);
             }
@@ -102,14 +97,14 @@ namespace LINQTest
         static void ObjectQuery2()
         {
             // 기존 쿼리문
-            var results1 = from c in CreateCustomers()
+            var resultQuery = from c in CreateCustomers()
                           where c.City == "London"
                           select c;
             
             // 람다식 변환
-            var results2 = CreateCustomers().Where(c => c.City == "London").Select(c => c);
+            var resultLamda = CreateCustomers().Where(c => c.City == "London").Select(c => c);
 
-            foreach (var c in results2)
+            foreach (var c in resultLamda)
             {
                 Console.WriteLine("{0}\t{1}", c.CustomerID, c.City);
             }
@@ -122,15 +117,14 @@ namespace LINQTest
 
             db.Log = Console.Out;
 
-            /*
-            var results = from c in db.GetTable<Customer>()
+            // 기존 쿼리문
+            var resultQuery = from c in db.GetTable<Customer>()
                           where c.City == "London"
                           select c;
-            */
 
-            var results = db.GetTable<Customer>().Where(c => c.City == "London").Select(c => c);
+            var resultLamda = db.GetTable<Customer>().Where(c => c.City == "London").Select(c => c);
 
-            foreach (var c in results)
+            foreach (var c in resultLamda)
             {
                 Console.WriteLine("{0}\t{1}", c.CustomerID, c.City);
             }
@@ -142,14 +136,14 @@ namespace LINQTest
             db.Log = Console.Out;
 
             // 기존 쿼리문
-            var results1 = from c in db.Customers
+            var resultQuery = from c in db.Customers
                           where c.City == "London"
                           select c;
 
             // 람다식 변환
-            var results2 = db.Customers.Where(a => a.City == "London").Select(a => a);
+            var resultLamda = db.Customers.Where(a => a.City == "London").Select(a => a);
 
-            foreach (var c in results)
+            foreach (var c in resultLamda)
                 Console.WriteLine("{0}\t{1}", c.CustomerID, c.City);
         }
 
@@ -173,7 +167,6 @@ namespace LINQTest
                 c => c.Orders.Where(o => c.City == "London"),
                 (c, o) => new { c.ContactName, o.OrderID });
 
-
             foreach (var c in resultLamda)
             {
                 Console.WriteLine("{0}\t{1}", c.ContactName, c.OrderID);
@@ -186,17 +179,17 @@ namespace LINQTest
             db.Log = Console.Out;
 
             // 기존 쿼리문
-            var results1 = from c in db.Customers
+            var resultQuery = from c in db.Customers
                           where c.City == "London"
                           orderby c.ContactName descending
                           select new { c.ContactName, c.CustomerID };
 
             // 람다식 변환
-            var results2 = db.Customers.Where(c => c.City == "London")
+            var resultLamda = db.Customers.Where(c => c.City == "London")
                 .OrderByDescending(c => c.ContactName)
                 .Select(c => new {c.ContactName, c.CustomerID});
 
-            foreach (var c in results2)
+            foreach (var c in resultLamda)
             {
                 Console.WriteLine("{0}\t{1}", c.CustomerID, c.ContactName);
             }
@@ -208,16 +201,16 @@ namespace LINQTest
             db.Log = Console.Out;
 
             // 기존 쿼리문
-            var results1 = from c in db.Customers
+            var resultQuery = from c in db.Customers
                           group c by c.City into g
                           orderby g.Count() ascending
                           select new { City = g.Key, Count = g.Count() };
 
 
             // 람다식 변환
-            var results2 = db.Customers.GroupBy(c => c.City).Select(g => new { City = g.Key, Count = g.Count() }).OrderBy(g => g.Count);
+            var resultLamda = db.Customers.GroupBy(c => c.City).Select(g => new { City = g.Key, Count = g.Count() }).OrderBy(g => g.Count);
 
-            foreach (var c in results1)
+            foreach (var c in resultLamda)
             {
                 Console.WriteLine("{0}\t{1}", c.City, c.Count);
             }
@@ -229,15 +222,15 @@ namespace LINQTest
             db.Log = Console.Out;
 
             // 기존 쿼리문
-            var results1 = from c in db.Customers
+            var resultQuery = from c in db.Customers
                           join e in db.Employees on c.City equals e.City
                           group e by e.City into g
                           select new { City = g.Key, Count = g.Count() };
 
             // 람다식 변환
-            var results2 = db.Customers.Join(db.Employees, c => c.City, p => p.City, (c, p) => new { c.City }).GroupBy(p => p.City).Select(c => new { City = c.Key, Count = c.Count() });
+            var resultLamda = db.Customers.Join(db.Employees, c => c.City, p => p.City, (c, p) => new { c.City }).GroupBy(p => p.City).Select(c => new { City = c.Key, Count = c.Count() });
 
-            foreach (var c in results2)
+            foreach (var c in resultLamda)
             {
                 Console.WriteLine("{0}\t{1}", c.City, c.Count);
             }
@@ -349,12 +342,12 @@ namespace LINQTest
             var db = new NorthwindDataContext();
 
             // 기존 쿼리문
-            var productsWithCh1 = from p in db.Products
+            var resultQuery = from p in db.Products
                                  where p.ProductName.Contains("Ch")
                                  select p;
 
             // 람다식 변환
-            var productsWithCh2 = db.Products.Where(a => a.ProductName.Contains("Ch")).Select(a => a);
+            var resultLamda = db.Products.Where(a => a.ProductName.Contains("Ch")).Select(a => a);
 
             var productsByName = db.Products
                 .Where(p => p.UnitPrice < 5)
@@ -365,7 +358,7 @@ namespace LINQTest
                 .Select(p => new {p.ProductName, p.UnitPrice});
 
             Console.WriteLine(">>Products containing Ch");
-            foreach (var product in productsWithCh2)
+            foreach (var product in resultLamda)
                 Console.WriteLine("{0}, {1}", product.ProductName, product.ProductID);
 
             Console.WriteLine("\n\n>>Products with low prices (names only printed)");
