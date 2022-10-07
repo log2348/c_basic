@@ -1,0 +1,17 @@
+C:\workspace_c\LINQTest\LINQTest\bin\Debug\LINQTest.exe.config
+C:\workspace_c\LINQTest\LINQTest\bin\Debug\LINQTest.exe
+C:\workspace_c\LINQTest\LINQTest\bin\Debug\LINQTest.pdb
+C:\workspace_c\LINQTest\LINQTest\obj\Debug\LINQTest.csproj.AssemblyReference.cache
+C:\workspace_c\LINQTest\LINQTest\obj\Debug\LINQTest.csproj.SuggestedBindingRedirects.cache
+C:\workspace_c\LINQTest\LINQTest\obj\Debug\LINQTest.csproj.CoreCompileInputs.cache
+C:\workspace_c\LINQTest\LINQTest\obj\Debug\LINQTest.exe
+C:\workspace_c\LINQTest\LINQTest\obj\Debug\LINQTest.pdb
+C:\workspace_c\LINQTest\LINQTest\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\workspace_c\LINQTest\LINQTest\bin\Debug\System.Security.AccessControl.dll
+C:\workspace_c\LINQTest\LINQTest\bin\Debug\System.Security.Permissions.dll
+C:\workspace_c\LINQTest\LINQTest\bin\Debug\System.Security.Principal.Windows.dll
+C:\workspace_c\LINQTest\LINQTest\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\workspace_c\LINQTest\LINQTest\bin\Debug\System.Security.AccessControl.xml
+C:\workspace_c\LINQTest\LINQTest\bin\Debug\System.Security.Permissions.xml
+C:\workspace_c\LINQTest\LINQTest\bin\Debug\System.Security.Principal.Windows.xml
+C:\workspace_c\LINQTest\LINQTest\obj\Debug\LINQTest.csproj.CopyComplete
