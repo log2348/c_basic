@@ -1,0 +1,8 @@
+C:\workspace_c\AssignmentApp1\AssignmentApp1\bin\Debug\AssignmentApp1.exe.config
+C:\workspace_c\AssignmentApp1\AssignmentApp1\bin\Debug\AssignmentApp1.exe
+C:\workspace_c\AssignmentApp1\AssignmentApp1\bin\Debug\AssignmentApp1.pdb
+C:\workspace_c\AssignmentApp1\AssignmentApp1\obj\Debug\AssignmentApp1.csproj.AssemblyReference.cache
+C:\workspace_c\AssignmentApp1\AssignmentApp1\obj\Debug\AssignmentApp1.csproj.SuggestedBindingRedirects.cache
+C:\workspace_c\AssignmentApp1\AssignmentApp1\obj\Debug\AssignmentApp1.csproj.CoreCompileInputs.cache
+C:\workspace_c\AssignmentApp1\AssignmentApp1\obj\Debug\AssignmentApp1.exe
+C:\workspace_c\AssignmentApp1\AssignmentApp1\obj\Debug\AssignmentApp1.pdb

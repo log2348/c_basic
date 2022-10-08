@@ -17,7 +17,7 @@ namespace LINQTest
         static void Main(string[] args)
         {
             ObjectQuery1();
-            ObjectQuery2();
+            //ObjectQuery2();
         }
         static void NumQuery()
         {
@@ -85,7 +85,7 @@ namespace LINQTest
                           where c.City == "London"
                           select c;
 
-            // 람다식 변형
+            // 람다식 변환
             var resultLamda = CreateCustomers().Where(a => a.City == "London");
 
             foreach (var c in resultLamda)
@@ -122,6 +122,7 @@ namespace LINQTest
                           where c.City == "London"
                           select c;
 
+            // 람다식 변환
             var resultLamda = db.GetTable<Customer>().Where(c => c.City == "London").Select(c => c);
 
             foreach (var c in resultLamda)
@@ -320,8 +321,7 @@ namespace LINQTest
 
             foreach (var c in matchingCustomers)
             {
-                Console.WriteLine("{0}\t{1}\t{2}",
-                    c.CustomerID, c.ContactName, c.City);
+                Console.WriteLine("{0}\t{1}\t{2}", c.CustomerID, c.ContactName, c.City);
             }
         }
 
@@ -359,15 +359,21 @@ namespace LINQTest
 
             Console.WriteLine(">>Products containing Ch");
             foreach (var product in resultLamda)
+            {
                 Console.WriteLine("{0}, {1}", product.ProductName, product.ProductID);
+            }
 
             Console.WriteLine("\n\n>>Products with low prices (names only printed)");
             foreach (var product in productsByName)
+            {
                 Console.WriteLine(product);
+            }
 
             Console.WriteLine("\n\n>>Products that are discontinued (as new types)");
             foreach (var product in productsDetails)
+            {
                 Console.WriteLine("{0}, {1}", product.ProductName, product.UnitPrice);
+            }
 
         }
 
@@ -375,8 +381,7 @@ namespace LINQTest
         {
             var db = new NorthwindDataContext();
 
-            var janBirthdays = db.Employees
-                .Where(e => e.BirthDate.Value.Month == 1);
+            var janBirthdays = db.Employees.Where(e => e.BirthDate.Value.Month == 1);
 
             foreach (var emp in janBirthdays)
             {
@@ -406,8 +411,7 @@ namespace LINQTest
             var sumCost = db.Products.Sum(p => p.UnitsOnOrder);
             var avgCost = db.Products.Select(p => p.UnitPrice).Average();
 
-            Console.WriteLine("Min = {0:c}, Max = {1:c}, Sum = {2}, Avg = {3:c}",
-                minCost, maxCost, sumCost, avgCost);
+            Console.WriteLine("Min = {0:c}, Max = {1:c}, Sum = {2}, Avg = {3:c}", minCost, maxCost, sumCost, avgCost);
 
         }
 
@@ -415,18 +419,14 @@ namespace LINQTest
         {
             var db = new NorthwindDataContext();
 
-            var customers1 = db.Customers
-                .Where(c => c.Orders.Any());
+            var customers1 = db.Customers.Where(c => c.Orders.Any());
 
-            var customers2 = db.Customers
-                .Where(c => c.Orders.All(o => o.Freight < 50));
+            var customers2 = db.Customers.Where(c => c.Orders.All(o => o.Freight < 50));
 
             foreach (var c in customers1)
             {
                 Console.WriteLine("{0}", c.ContactName);
             }
-
-            Console.WriteLine("-----");
 
             foreach (var c in customers2)
             {
@@ -443,10 +443,14 @@ namespace LINQTest
             List<Customers> custList = customers.ToList();
 
             foreach (var cust in custArray)
+            {
                 Console.WriteLine("{0}", cust.ContactName);
+            }
 
             foreach (var cust in custList)
+            {
                 Console.WriteLine("{0}", cust.ContactName);
+            }
         }
 
     }
