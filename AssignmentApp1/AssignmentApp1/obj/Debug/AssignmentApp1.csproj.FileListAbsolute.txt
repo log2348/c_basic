@@ -6,3 +6,5 @@ C:\workspace_c\AssignmentApp1\AssignmentApp1\obj\Debug\AssignmentApp1.csproj.Sug
 C:\workspace_c\AssignmentApp1\AssignmentApp1\obj\Debug\AssignmentApp1.csproj.CoreCompileInputs.cache
 C:\workspace_c\AssignmentApp1\AssignmentApp1\obj\Debug\AssignmentApp1.exe
 C:\workspace_c\AssignmentApp1\AssignmentApp1\obj\Debug\AssignmentApp1.pdb
+C:\workspace_c\AssignmentApp1\AssignmentApp1\obj\Debug\AssignmentApp1._16_Hashtable.UserControl1.resources
+C:\workspace_c\AssignmentApp1\AssignmentApp1\obj\Debug\AssignmentApp1.csproj.GenerateResource.cache

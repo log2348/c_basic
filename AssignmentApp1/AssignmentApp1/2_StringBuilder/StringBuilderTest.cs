@@ -8,6 +8,7 @@ namespace AssignmentApp1._2_StringBuilder
 {
     public class StringBuilderTest
     {
+        /*
         static void Main(string[] args)
         {
             StringBuilder sb = new StringBuilder("StringBuilder Test");
@@ -21,5 +22,6 @@ namespace AssignmentApp1._2_StringBuilder
 
             Console.WriteLine(sb);
         }
+        */
     }
 }

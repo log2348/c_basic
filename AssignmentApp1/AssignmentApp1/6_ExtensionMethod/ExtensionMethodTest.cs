@@ -10,11 +10,6 @@ namespace AssignmentApp1._6_ExtensionMethod
     public class ExtensionMethodTest
     {
 
-        static void Main()
-        {
-
-        }
-
         public class Calculator
         {
             public int Plus(int a, int b)
