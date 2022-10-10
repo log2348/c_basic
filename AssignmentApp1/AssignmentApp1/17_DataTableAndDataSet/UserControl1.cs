@@ -65,8 +65,17 @@ namespace AssignmentApp1._16_Hashtable
                 dt.Rows.Add(dr);
             }
 
+            // 데이터 추가 (행)
+            dt.Rows.Add("한지현", "77", "010-3333-3333");
+
             // DataTable에 있는 값을 DataGridView에 넣기
             dataGridView1.DataSource = dt;
+
+            // DataSet 생성
+            DataSet ds = new DataSet();
+
+            // DataSet에 DataTable 추가
+            ds.Tables.Add(dt);
         }
 
     }

@@ -58,6 +58,7 @@
     <Compile Include="17_DataTableAndDataSet\UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="18_ParseAndConvert\ParseAndConvert.cs" />
     <Compile Include="19_Exception\ExceptionTest.cs" />
     <Compile Include="1_AccessModifier\Person.cs" />
     <Compile Include="20-22_Delegate\DelegateTest.cs" />
@@ -66,7 +67,10 @@
     <Compile Include="3_RefAndOut\RefAndOutTest.cs" />
     <Compile Include="5_MethodParams\MethodParamsTest.cs" />
     <Compile Include="6_ExtensionMethod\ExtensionMethodTest.cs" />
+    <Compile Include="7_EnumAndSwitch\EnumTest.cs" />
     <Compile Include="8_Inheritance\BaseTest.cs" />
+    <Compile Include="4_ConstAndReadOnly\ConstAndReadOnlyTest.cs" />
+    <Compile Include="9_Boxing\BoxingAndUnboxing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -77,5 +81,6 @@
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

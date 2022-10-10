@@ -27,6 +27,9 @@ namespace AssignmentApp1._14_Array
             {
                 Console.WriteLine(i);
             }
+
+            // 배열 요소 초기화
+            Array.Clear(arr2, 0, arr2.Length);
         }
         */
     }

@@ -39,5 +39,17 @@ namespace AssignmentApp1._1_AccessModifier
         {
             Console.WriteLine("Hello, World!");
         }
+
+        /*
+         * protected internal
+         * 같은 어셈블리에 있는 코드에 대해서만 protected로 접근할 수 있음
+         * 다른 어셈블리에 있는 코드에서는 private와 같은 수준의 접근성을 가짐
+         */
+
+
+        /*
+         * private protected
+         * 같은 어셈블리 내 클래스에서 파생된 형식에서만 접근할 수 있음
+         */
     }
 }
