@@ -26,6 +26,17 @@ namespace AssignmentApp1._18_ParseAndConvert
             // '' 파싱 불가
             // 예외 발생
 
+            // TryParse 예제
+            // 변환의 성공 여부를 반환한다. (true or false)
+            string strA = "10";
+            string strB = "12.345";
+            string strC = null;
+
+            int i;
+            Console.WriteLine(Int32.TryParse(strA, out i)); // true
+            Console.WriteLine(Int32.TryParse(strB, out i)); // false
+            Console.WriteLine(Int32.TryParse(strC, out i)); // false
+
             // Convert 예제
             int num = -1;
             bool flag = true;
