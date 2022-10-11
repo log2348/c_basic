@@ -1,4 +1,7 @@
-﻿namespace DBConnectionApp
+﻿using System.Data;
+using System.Diagnostics;
+
+namespace DBConnectionApp
 {
     partial class Form1
     {
@@ -28,10 +31,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+
+            DBConnectionSample db = new DBConnectionSample();
+            db.Open();
+
+            string sql = "SELECT * FROM dbo.TB_Board";
+
+            DataSet ds = db.GetDataSet(sql);
+            //gridcontrol.DataSource = ds.Tables[0];
+            Debug.WriteLine(ds);
+            db.Close();
+
         }
 
         #endregion

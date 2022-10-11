@@ -1,0 +1,11 @@
+C:\workspace_c\MyDBConnApp1\MyDBConnApp1\obj\Debug\MyDBConnApp1.csproj.AssemblyReference.cache
+C:\workspace_c\MyDBConnApp1\MyDBConnApp1\obj\Debug\MyDBConnApp1.csproj.SuggestedBindingRedirects.cache
+C:\workspace_c\MyDBConnApp1\MyDBConnApp1\obj\Debug\MyDBConnApp1.csproj.CoreCompileInputs.cache
+C:\workspace_c\MyDBConnApp1\MyDBConnApp1\bin\Debug\MyDBConnApp1.exe.config
+C:\workspace_c\MyDBConnApp1\MyDBConnApp1\bin\Debug\MyDBConnApp1.exe
+C:\workspace_c\MyDBConnApp1\MyDBConnApp1\bin\Debug\MyDBConnApp1.pdb
+C:\workspace_c\MyDBConnApp1\MyDBConnApp1\bin\Debug\Newtonsoft.Json.dll
+C:\workspace_c\MyDBConnApp1\MyDBConnApp1\bin\Debug\Newtonsoft.Json.xml
+C:\workspace_c\MyDBConnApp1\MyDBConnApp1\obj\Debug\MyDBConnApp1.csproj.CopyComplete
+C:\workspace_c\MyDBConnApp1\MyDBConnApp1\obj\Debug\MyDBConnApp1.exe
+C:\workspace_c\MyDBConnApp1\MyDBConnApp1\obj\Debug\MyDBConnApp1.pdb

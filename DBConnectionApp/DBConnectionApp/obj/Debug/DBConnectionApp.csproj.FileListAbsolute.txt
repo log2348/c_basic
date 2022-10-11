@@ -8,3 +8,4 @@ C:\workspace_c\DBConnectionApp\DBConnectionApp\obj\Debug\DBConnectionApp.csproj.
 C:\workspace_c\DBConnectionApp\DBConnectionApp\obj\Debug\DBConnectionApp.csproj.CoreCompileInputs.cache
 C:\workspace_c\DBConnectionApp\DBConnectionApp\obj\Debug\DBConnectionApp.exe
 C:\workspace_c\DBConnectionApp\DBConnectionApp\obj\Debug\DBConnectionApp.pdb
+C:\workspace_c\DBConnectionApp\DBConnectionApp\obj\Debug\DBConnectionApp.Form1.resources
